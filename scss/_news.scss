@@ -1,0 +1,54 @@
+.news{
+    background-image: url(../img/bg2.jpg);
+    background-size: cover;
+}
+
+.news-inner{
+    width: 80%;
+    padding: 90px 0;
+    margin: 0 auto;
+}
+
+.news .title{
+    color: white;
+}
+
+.news__wrap{
+    display: flex;
+    justify-content: space-between;
+    @include smartphone{
+        flex-direction: column;
+    }
+    &__item{
+        width: 30%;
+        background-color: #fff;
+        box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.16);
+        @include smartphone{
+            width: 100%;
+            & + *{
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+.news-img{
+    width: 100%;
+}
+
+.news-img img{
+    width: 100%;
+}
+
+.news__content{
+    padding: 20px;
+    &__day{
+        font-weight: bold;
+    }
+    &__title{
+        font-weight: bold;
+    }
+    &__intro{
+        margin-top: 20px;
+    }
+}
